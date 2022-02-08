@@ -1,7 +1,7 @@
 const tail = function(array) {
-  let tailArray = array.slice(-1)
-  return tailArray
-}
+  let tailArray = array.slice(-1);
+  return tailArray;
+};
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
