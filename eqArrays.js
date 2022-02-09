@@ -1,8 +1,10 @@
 const eqArrays = function(first, second) {
-  
-  for (let i = 0; i <first.length; i++) {
+  if (first.length !== second.length) {
+    return false
+  }
+  for (let i = 0; i < first.length; i++) {
     console.log(first[i], second[i])
-    if (first[i] !== second[i] || first.length !== second.length ) {
+    if (first[i] !== second[i]) {
       return false
     
     }
@@ -12,11 +14,11 @@ const eqArrays = function(first, second) {
 
 }
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log("😊😊😊 Assertion Passed: [" + actual + "] === [" + expected + "]");
+const assertArraysEqual = function(first, second) {
+  if (eqArrays(first, second)) {
+    console.log(`✅✅✅ Assertion Passed: [${first}] === [${second}]`);
   } else {
-    console.log("😭😭😭 Assertion Failed: [" + actual + "] !== [" + expected + "]");
+    console.log(`🛑🛑🛑 Assertion Failed: [${first}] !== [${second}]`);
   }
 };
 
