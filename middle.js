@@ -36,9 +36,7 @@ const middle = function(array) {
       returnedArray[0] = array[center]
       return returnedArray
   }
-  
 
- 
 }
 
 assertArraysEqual(middle([1]), []) // => []
