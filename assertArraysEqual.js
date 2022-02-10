@@ -1,8 +1,10 @@
 const eqArrays = function(first, second) {
-  
+  if (first.length !== second.length) {
+    return false
+  }
   for (let i = 0; i < first.length; i++) {
-    //console.log(first[i], second[i])
-    if (first[i] !== second[i] || first.length !== second.length ) {
+    console.log(first[i], second[i])
+    if (first[i] !== second[i]) {
       return false
     
     }
