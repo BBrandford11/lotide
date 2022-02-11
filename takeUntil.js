@@ -4,11 +4,10 @@ const takeUntil = function (array, callback) {
     //console.log(callback(item))
     if (!callback(item)) {
       results.push(item);
-    }else {
-      return results
+    } else {
+      return results;
     }
   }
-  
 };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
