@@ -14,35 +14,5 @@ const letterPositions = function(sentence) {
   }
   return results;
 
-    //console.log(letters)
-  }
-  // logic to update results here
-  
-  console.log(letterPositions("i love claire so much"))
-/*
-const eqArrays = function(first, second) {
-  if (first.length !== second.length) {
-    return false
-  }
-  for (let i = 0; i < first.length; i++) {
-    console.log(first[i], second[i])
-    if (first[i] !== second[i]) {
-      return false
-    
-    }
-  
-  }
-  return true
-
 }
-
-const assertArraysEqual = function(first, second) {
-  if (eqArrays(first, second)) {
-    console.log(`✅✅✅ Assertion Passed: ${first} === ${second}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${first} !== ${second}`);
-  }
-};
-
-console.log(assertArraysEqual("hello", "hello"))
-*/
+module.exports = letterPositions

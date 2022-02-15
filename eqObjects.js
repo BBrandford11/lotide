@@ -59,3 +59,5 @@ console.log(eqObjects(cd, cd2)); // => false
 
 //eqObjects(ab, abc); // => false
 // TEST CODE
+
+module.exports = eqObjects

@@ -28,4 +28,4 @@ const countLetters = function(string) {
   return count 
 
 }
-console.log(countLetters("i love claire so much"))
+module.exports = countLetters
